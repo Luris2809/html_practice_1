@@ -1,0 +1,150 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*rem算出をしやすくするために*/
+}
+
+
+.btn,
+a.btn,
+button.btn {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Reset default page margins so header touches the window edges */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: "Stack Sans Text", "Noto Sans JP","Stack Sans Text",sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: blue;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+.header h1 {
+    font-size: 30px;
+    margin: 0 auto;
+}
+.h1_a :hover{
+    color:black;
+}
+.h1_a :active{
+    color:rgb(74, 74, 74);
+}
+.header .header-link {
+    margin-left: auto;
+    display: flex;
+    background-color: pink;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.images {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradation {
+    height: 100px;
+    color: rgb(242, 243, 244);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:15px;
+    background-image: linear-gradient(0deg, black, pink);
+}
+
+.gradation .container {
+    display: flex;
+    padding-left: 20px;
+}
+
+.fa-position-left {
+    position: absolute;
+    top: calc(50% - .5em);
+    left: 1rem;
+}
+
+.fa-position-right {
+    position: absolute;
+    top: calc(50% - .5em);
+    right: 1rem;
+}
+
+.btn--purple,
+.btn--radius {
+    border-radius: 100vh;
+    border: 2px solid black;
+    background-color: #212529;
+
+}
+
+.gradation a {
+    color: white;
+}
+
+form input{
+    border:2px solid rgb(124, 122, 122);
+    border-radius: 100vh;
+    width: 125px;
+    height: 30px;
+    font-size:18px
+}
